@@ -89,10 +89,6 @@ body {
     padding-bottom: 20px;
 }
 
-.icon img {
-    height: 50%;
-}
-
 .title {
     font-size: 24px;
     font-weight: 700;
@@ -139,19 +135,146 @@ body {
     justify-content: center;
 }
 
-.contact .li-wrap .text,
-.skills .li-wrap .text,
-.hobbies .li-wrap .text {
+.contact .li-wrap .text {
     width: calc(100% - 50px);
     word-break: break-all;
     padding-left: 10px;
 }
 
-.right {
-    background: cornsilk;
-    padding: 20px;
+.skills ul,
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.right div {
-    margin: 20px auto;
+.skills .li-wrap,
+.hobbies .li-wrap {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .li-wrap {
+    background: #fff;
+}
+
+.skills .li-wrap .text,
+.hobbies .li-wrap .text {
+    margin-top: 5px;
+}
+
+.hobbies .li-wrap {
+    border: 2px solid #fff;
+}
+
+.skills .li-wrap .text {
+    color: rgba(148, 89, 16, 0.767);
+    font-size: 13px;
+}
+
+.hobbies .li-wrap:hover {
+    background: #fff;
+}
+
+.hobbies .li-wrap:hover .text,
+.hobbies .li-wrap:hover .icon {
+    color: rgba(148, 89, 16, 0.767);
+}
+
+.header {
+    background: #182530a8;
+    padding: 15px 38px;
+    color: #fff;
+    height: 240px;
+}
+
+.header .name {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: bisque;
+}
+
+.header .role {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.header .about {
+    margin-top: 16px;
+    line-height: 20px;
+}
+
+.right-inner {
+    padding: 30px;
+    background: cornsilk;
+    color: rgba(87, 6, 6, 0.678);
+}
+
+.right-inner .title {
+    color: rgba(87, 6, 6, 0.678);
+}
+
+.right-inner .edu {
+    margin-top: 30px;
+}
+
+.right-inner .li-wrap {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.right-inner .li-wrap .date {
+    width: 125px;
+    color: rgba(148, 89, 16, 0.767);
+}
+
+.right-inner .li-wrap .info {
+    width: calc(100% - 125px);
+    padding-left: 25px;
+    position: relative;
+}
+
+.right-inner .li-wrap .info-title {
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(148, 89, 16, 0.767);
+}
+
+.right-inner .li-wrap .info-com {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.right-inner .li-wrap .info-cont {
+    margin-top: 15px;
+}
+
+.right-inner .li-wrap .info:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: rgba(148, 89, 16, 0.767);
+    border-radius: 50%;
+}
+
+.right-inner .li-wrap .info::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    height: 90%;
+    background: rgba(148, 89, 16, 0.767);
 }
